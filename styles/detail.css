@@ -1,35 +1,15 @@
-body{
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    background-color: #e0e0e0;
+#_img {
+  height: 500px;
+  width: 500px;
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
-header{
-    background-color: rosybrown;
+form {
+  margin-left: 4%;
+  margin-bottom: 1%;
+  margin-right: 4%;
 }
-footer{
-    background-color: rosybrown;
-}
-#logo{
-    height: 60px;
-    width: 60px;
-}
-#_img{
-    height: 500px;
-    width: 500px;
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-#socialsites{
-    height: 20px;
-    width: 22px;
-}
-form{
-    margin-left: 4%;
-    margin-bottom: 1%;
-    margin-right: 4%;
-}
-.div1{
-    margin: 1% 4% 2% 4%;
+.div1 {
+  margin: 1% 4% 2% 4%;
 }
