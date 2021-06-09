@@ -13,21 +13,26 @@
   display: flex;
   width: 100%;
   margin-top: 50px;
-  margin-left: 19px;
+  justify-content: center;
 }
 .image_container {
   margin-top: 50px;
+  display: flex;
 }
 .content {
-  background-color: rgb(132, 136, 139);
+  background-color: lightgrey;
   width: 40%;
   margin-right: 65px;
   margin-left: 54px;
-  height: 20.6em;
+  display: flex;
 }
+
 ._content {
-  background-color: rgb(132, 136, 139);
+  background-color: lightgrey;
   width: 40%;
   margin-left: 72px;
-  height: 20.6em;
+  display: flex;
+}
+.sentence {
+  margin-left: 25px;
 }
