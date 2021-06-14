@@ -7,17 +7,14 @@
   display: flex;
   width: 50%;
   margin: 5px auto;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 3.5em;
+  margin-bottom: 20px;
 }
 .text {
   margin-left: 25px;
   margin-top: 30px;
 }
-.pay {
-  text-decoration: none;
-  color: black;
-}
+
 .container {
   display: flex;
   justify-content: center;
@@ -30,7 +27,7 @@
   display: flex;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 50px;
+  margin-bottom: 10em;
   background-color: rosybrown;
 }
 .width {
@@ -42,5 +39,5 @@
   margin-top: 25px;
 }
 #_pay {
-  margin-top: 70px;
+  margin-top: 65px;
 }

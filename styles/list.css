@@ -8,11 +8,13 @@
   height: 200px;
   width: 250px;
 }
-
 .image-container {
   display: flex;
   width: 100%;
   margin-top: 50px;
+  justify-content: center;
+}
+.nav{
   justify-content: center;
 }
 .image_container {
@@ -34,5 +36,13 @@
   display: flex;
 }
 .sentence {
-  margin-left: 25px;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: left;
+}
+.content:hover{
+  background-color: rosybrown;
+}
+._content:hover{
+  background-color: rosybrown;
 }

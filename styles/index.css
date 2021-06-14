@@ -21,8 +21,8 @@
 
 .container1 {
   display: flex;
-  justify-content: space-evenly;
   margin-top: 50px;
+  margin-left: 7em;
 }
 .images {
   opacity: 1;
@@ -39,9 +39,11 @@
 
 .container:hover .images {
   opacity: 0.5;
+  
 }
 .container:hover .middle {
   opacity: 1;
+  
 }
 .div1 {
   background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
@@ -61,3 +63,4 @@
   margin-top: -5em;
   margin-left: 9.5em;
 }
+
