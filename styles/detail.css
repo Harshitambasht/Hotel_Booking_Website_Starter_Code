@@ -5,8 +5,8 @@
 }
 
 .div1 {
-  margin: 1% 4% 2% 1.5%;
-  margin-top: -2em;
+  margin: -6% 4% 2% 1.5%;
+  
 }
 .container {
   height: 382px;
@@ -14,7 +14,7 @@
   
   display: flex;
   justify-content: space-evenly;
-  margin: 2em;
+  margin: 5em;
   
 }
 #_btn:hover{

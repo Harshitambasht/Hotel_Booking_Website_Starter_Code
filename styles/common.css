@@ -14,12 +14,16 @@ html {
 .navbar-light {
   background-color: rosybrown;
   width: 100%;
+  position: fixed;
+    top: 0;
 }
 #nav {
   display: block;
   position: fixed;
   z-index: 10;
+  
 }
+
 
 .btn-light {
   text-transform: uppercase;

@@ -6,8 +6,8 @@
   background-color: rgb(132, 136, 139);
   display: flex;
   width: 50%;
-  margin: 5px auto;
-  margin-top: 3.5em;
+  margin: auto;
+  margin-top: 7.5em;
   margin-bottom: 20px;
 }
 .text {
