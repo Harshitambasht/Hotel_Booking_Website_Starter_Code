@@ -8,6 +8,9 @@
   margin-top: 50px;
   justify-content: center;
 }
+.checked {
+  color: orange;
+}
 .nav{
   justify-content: center;
 }
