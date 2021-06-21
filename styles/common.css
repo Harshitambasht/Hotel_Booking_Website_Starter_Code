@@ -56,8 +56,11 @@ footer {
 
 .btn {
   float: none;
+  
 }
-
+#btn1{
+  color: white;
+}
 .login-btn {
   float: right;
 }
@@ -72,4 +75,8 @@ footer {
 #modal-footer {
   justify-content: center;
   padding-bottom: 0em;
+}
+#form1{
+  margin-bottom: 2em;
+   margin-left: 4em;
 }

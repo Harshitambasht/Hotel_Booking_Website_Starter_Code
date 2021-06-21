@@ -40,7 +40,7 @@
   <body>
     <div>
       <header>
-        <nav class="navbar-light" >
+        <nav class="navbar-light">
           <div>
             <a href="/index.html">
               <img src="assests/images/logo.png" id="logo"
@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <a
-                  style="left:-10em;"
+                  style="left: -10em"
                   class="carousel-control-prev"
                   href="#carouselExampleControls1"
                   role="button"
@@ -116,7 +116,7 @@
                   <span class="sr-only">Previous</span>
                 </a>
                 <a
-                  style="right: -10em;"
+                  style="right: -10em"
                   class="carousel-control-next"
                   href="#carouselExampleControls1"
                   role="button"
@@ -147,9 +147,9 @@
                     <input
                       type="number"
                       min="1"
-                      name="adults"
+                      id="Adults"
                       class="w-100"
-                      required
+                      required="true"
                     />
                   </div>
                 </div>
@@ -157,7 +157,12 @@
                 <div class="_form">
                   <label class="text" for="Name">Name:</label>
                   <div class="input">
-                    <input type="text" name="name" class="w-100" required />
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-100"
+                      required="true"
+                    />
                   </div>
                 </div>
                 <div class="_form">
@@ -165,9 +170,9 @@
                   <div class="input">
                     <input
                       type="date"
-                      name="from date"
+                      id="From date"
                       class="w-100"
-                      required
+                      required="true"
                     />
                   </div>
                 </div>
@@ -176,9 +181,9 @@
                   <div class="input">
                     <input
                       type="date"
-                      name="last date"
+                      id="To date"
                       class="w-100"
-                      required
+                      required="true"
                     />
                   </div>
                 </div>
@@ -187,7 +192,7 @@
                   <div class="input">
                     <input
                       type="number"
-                      name="price"
+                      id="Total"
                       disabled
                       class="w-100"
                       style="background-color: white"
@@ -195,20 +200,17 @@
                   </div>
                 </div>
                 <div style="text-align: center">
-                  <a href="payment.html">
-                    <button
-                      type="button"
-                      class="btn"
-                      id="_btn"
-                      style="
-                        color: green;
-                        background-color: white;
-                        border-color: #198754;
-                      "
-                    >
-                      Book Now
-                    </button></a
+                  <button
+                    class="btn btn-outline-success"
+                    id="_btn"
+                    style="
+                      color: green;
+                      background-color: white;
+                      border-color: #198754;
+                    "
                   >
+                    Book Now
+                  </button>
                 </div>
               </form>
             </div>
@@ -249,6 +251,7 @@
             class="btn btn-info"
             data-bs-toggle="modal"
             data-bs-target="#example"
+            id="btn1"
           >
             Contact Us
           </button>
@@ -316,7 +319,7 @@
             >
             <div class="col-sm-10" style="width: 50%">
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 id="form"
                 id="username"
