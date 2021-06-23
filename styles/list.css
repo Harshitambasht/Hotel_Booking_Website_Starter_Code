@@ -4,14 +4,12 @@
 }
 .image-container {
   display: flex;
-  width: 100%;
-  margin-top: 50px;
-  justify-content: center;
+  margin-left: 23px;
 }
 .checked {
   color: orange;
 }
-.nav{
+.nav {
   justify-content: center;
 }
 .image_container {
@@ -20,10 +18,17 @@
 }
 .content {
   background-color: lightgrey;
-  width: 40%;
-  margin-right: 65px;
-  margin-left: 54px;
+  margin-right: 58px;
+  margin-left: 56px;
   display: flex;
+  width: 40%;
+  height: 201px;
+}
+.content1 {
+  display: flex;
+  background-color: lightgrey;
+  margin-left: 54px;
+  width: 95%;
 }
 
 ._content {
@@ -37,9 +42,74 @@
   margin-top: 15px;
   text-align: left;
 }
-.content:hover{
+.content:hover {
   background-color: rosybrown;
 }
-._content:hover{
+.content1:hover {
   background-color: rosybrown;
+}
+._content:hover {
+  background-color: rosybrown;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 576px) {
+  .image-container {
+    display: block;
+    width: 100%;
+  }
+  .content {
+    display: block;
+    width: 79%;
+    height: 300px;
+  }
+  .content1 {
+    display: block;
+    margin-top: 1em;
+    width: 79%;
+  }
+  .map {
+    width: 95%;
+  }
+  .image_container {
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+    margin-left: -19px;
+  }
+  ._content {
+    display: block;
+    width: 80%;
+    margin-left: 92px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .image-container {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .content {
+    display: flex;
+    width: 85%;
+  }
+  .lalit {
+    margin-top: 15px;
+    width: 90%;
+  }
+  .map {
+    width: 95%;
+  }
+  .image_container {
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+    margin-left: -19px;
+  }
+  ._content {
+    width: 85%;
+    margin-right: 22px;
+    margin-left: 96px;
+  }
 }

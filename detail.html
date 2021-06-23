@@ -37,7 +37,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
+  <body class="body">
     <div>
       <header>
         <nav class="navbar-light">
@@ -66,6 +66,7 @@
                 style="width: 60%; margin: auto"
                 class="carousel slide"
                 data-ride="carousel"
+                class="slide"
               >
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -94,11 +95,12 @@
                   </div>
                 </div>
                 <a
-                  style="left: -10em"
+                  style=" margin-left: -11em;"
                   class="carousel-control-prev"
                   href="#carouselExampleControls1"
                   role="button"
                   data-slide="prev"
+                  id="previous"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +123,7 @@
                   href="#carouselExampleControls1"
                   role="button"
                   data-slide="next"
+                  id="next"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -200,15 +203,7 @@
                   </div>
                 </div>
                 <div style="text-align: center">
-                  <button
-                    class="btn btn-outline-success"
-                    id="_btn"
-                    style="
-                      color: green;
-                      background-color: white;
-                      border-color: #198754;
-                    "
-                  >
+                  <button class="btn btn-outline-success" id="_btn">
                     Book Now
                   </button>
                 </div>
@@ -298,55 +293,55 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+        <h5
+          class="modal-title"
+          id="exampleModalLabel"
+          style="font-family: Ubuntu, sans-serif; font-weight: bold"
+        >
+          Please Login
+        </h5>
         <button
           type="button"
-          class="close"
+          class="btn-close"
           data-bs-dismiss="modal"
           aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+        ></button>
       </div>
       <div class="modal-body">
-        <form class="form">
-          <div
-            class="form-group row"
-            style="margin-bottom: 2em; margin-left: 4em"
-          >
-            <label for="username" class="col-sm-2 col-form-label"
-              >Username:</label
-            >
-            <div class="col-sm-10" style="width: 50%">
+        <form action="index.html" method="GET" target="_self">
+          <div class="form-group row" id="form1">
+            <label for="username" class="col-sm-2">Username:</label>
+            <div style="width: 50%">
               <input
                 type="text"
-                class="form-control"
                 id="form"
                 id="username"
                 placeholder="Enter Username"
                 style="margin-left: 3em"
+                required
               />
             </div>
           </div>
-          <div class="form-group row" style="margin-left: 4em">
-            <label for="inputPassword3" class="col-sm-2 col-form-label"
-              >Password:</label
-            >
-            <div class="col-sm-10" style="width: 50%">
+          <div
+            class="form-group row"
+            style="margin-left: 4em; margin-bottom: 16px"
+          >
+            <label for="inputPassword3" class="col-sm-2">Password:</label>
+            <div style="width: 50%">
               <input
                 type="password"
-                class="form-control"
                 id="form"
                 id="inputPassword3"
                 placeholder="Enter Password"
                 style="margin-left: 3em"
+                required
               />
             </div>
           </div>
+          <div class="modal-footer" id="modal-footer">
+            <button onclick="login" class="btn btn-primary">Login</button>
+          </div>
         </form>
-        <div class="modal-footer" id="modal-footer">
-          <button type="button" class="btn btn-primary">Login</button>
-        </div>
       </div>
     </div>
   </div>
@@ -364,39 +359,41 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+        <h5
+          class="modal-title"
+          id="exampleModalLabel"
+          style="font-family: Ubuntu, sans-serif; font-weight: bold"
+        >
+          Get in touch
+        </h5>
         <button
           type="button"
-          class="close"
+          class="btn-close"
           data-bs-dismiss="modal"
           aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+        ></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="index.html" method="GET" target="_self">
           <div>Thank you for reaching out!!</div>
           <div>Please enter your email and we will get back to you.</div>
           <div class="form-group row" id="_us">
-            <label for="inputEmail3" class="col-sm-2 col-form-label"
-              >Email:</label
-            >
+            <label for="inputEmail3" class="col-sm-2">Email:</label>
             <div class="col-sm-10">
               <input
                 type="email"
-                class="form-control"
                 id="form"
                 id="inputEmail3"
                 placeholder="Enter your email id"
                 style="width: 60%; margin-left: -2em"
+                required
               />
             </div>
           </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
         </form>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
       </div>
     </div>
   </div>

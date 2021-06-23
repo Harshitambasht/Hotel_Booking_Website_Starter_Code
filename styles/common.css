@@ -1,7 +1,7 @@
-body {
+.body {
   padding-bottom: 80px;
-  position: relative;
   overflow-x: hidden;
+  background-color: #e0e0e0;
 }
 html {
   height: 100%;
@@ -67,10 +67,6 @@ footer {
 #_us {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-}
-.form {
-  margin-bottom: 1.5em;
-  margin-top: 0.5em;
 }
 #modal-footer {
   justify-content: center;
