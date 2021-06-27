@@ -76,3 +76,18 @@ footer {
   margin-bottom: 2em;
    margin-left: 4em;
 }
+/* Media query */
+
+@media only screen and (max-width: 576px) {
+ #line{
+  width: 100% !important;
+  margin-left: 6em;
+  margin-top: -24px;
+ }
+ .line{
+  margin-left: 85px !important;
+ }
+ #_line{
+  width: 5%;
+ }
+}
