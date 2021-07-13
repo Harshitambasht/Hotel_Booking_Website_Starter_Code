@@ -1,4 +1,14 @@
-// The header template
+let disableLoader = () => {
+    document.getElementById("loader").style.visibility = "hidden";
+    document.getElementsByTagName("body")[0].style.visibility = "visible";
+}
+
+let displayLoader = () => {
+    document.getElementsByTagName("body")[0].style.visibility = "hidden";
+    document.getElementById("loader").style.visibility  = "visible";
+}
+
+let displayHeaderTemplate = () => {
 let headerTemplate = `<a href="index.html" class="logo">
 <img src="assests/images/logo.png" id="logo-image" alt="logo"/>
 </a>
@@ -33,8 +43,9 @@ let headerTemplate = `<a href="index.html" class="logo">
 </div>`;
 
 document.getElementById('header').innerHTML = headerTemplate;
+};
 
-// The footer template
+let displayFooterTemplate = () => {
 let footerTemplate = `<div id="contact">
 <button type="button" class="btn btn-info btn-sm" id="btn1" data-bs-toggle="modal" data-backdrop="false" data-bs-target="#contact-modal">Contact Us</button>
 
@@ -81,11 +92,13 @@ let footerTemplate = `<div id="contact">
 </div>`;
 
 document.getElementById('footer').innerHTML = footerTemplate;
+};
 
-/**
- * Event handler invoked when login button inside the HEADER is clicked
- * @param {*} e event
- */
+
+displayLoader();
+displayHeaderTemplate();
+displayFooterTemplate();
+
 let mainLogin = e => {
     if (localStorage.getItem('isLogin') === 'true') {
         localStorage.setItem('isLogin', 'false');
@@ -93,15 +106,12 @@ let mainLogin = e => {
     }
 };
 
-/**
- * Event handler invoked when login button inside the LOGIN MODAL is clicked
- * @param {*} e event
- */
+
 let login = e => {
-    // setting both username and password to admin
+   
     localStorage.setItem('username', 'admin');
     localStorage.setItem('password', 'admin');
-    // setting the user state as non logged on webpage load
+    
     localStorage.setItem('isLogin', 'false');
 
     e.preventDefault();
@@ -120,7 +130,7 @@ let login = e => {
         location.reload();
     } else {
         alert('Incorrect credentials! Login failed!');
-        // clearing values of username & password fields from login modal
+        
         userElement.value = '';
         passwordElement.value = '';
     }
